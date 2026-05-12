@@ -18,6 +18,8 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('section').forEach(s => io.observe(s));
 
+// Language toggle is handled by js/i18n.js
+
 // Back to top button
 (() => {
   const btn = document.querySelector('.to-top');
@@ -50,18 +52,21 @@ document.querySelectorAll('section').forEach(s => io.observe(s));
   if (!pin) return;
   const video = pin.querySelector('.trust-pin__video');
   const textEl = pin.querySelector('.trust-pin__text');
-  const FULL_TEXT = 'AI + MORE INDUSTRIES';
-  const STEP = 0.08; // seconds between each char
+  const STEP = 0.08;
 
-  // Pre-render letters as spans so each one can fade in independently
-  textEl.innerHTML = '';
-  [...FULL_TEXT].forEach((c, i) => {
-    const s = document.createElement('span');
-    s.className = 'ch';
-    s.textContent = c === ' ' ? ' ' : c;
-    s.style.setProperty('--d', (i * STEP).toFixed(2) + 's');
-    textEl.appendChild(s);
-  });
+  const renderCaption = () => {
+    const FULL_TEXT = window.__TRUST_CAPTION__ || 'AI + MORE INDUSTRIES';
+    textEl.innerHTML = '';
+    [...FULL_TEXT].forEach((c, i) => {
+      const s = document.createElement('span');
+      s.className = 'ch';
+      s.textContent = c === ' ' ? ' ' : c;
+      s.style.setProperty('--d', (i * STEP).toFixed(2) + 's');
+      textEl.appendChild(s);
+    });
+  };
+  window.__renderTrustCaption = renderCaption;
+  renderCaption();
 
   let wasFull = false;
 
