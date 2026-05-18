@@ -4,6 +4,7 @@
     en: {
       'meta.title': 'Yunji Technology — Innovating Business Solutions',
       'nav.home': 'Home',
+      'nav.product': 'Products',
       'nav.what': 'What We Do',
       'nav.insights': 'Insights',
       'nav.about': 'About Us',
@@ -62,10 +63,74 @@
       'footer.contact.label2': 'Business Development',
       'footer.contact.label3': 'Marketing & Brand',
       'footer.copyright': '© 2016 - 2026 Technology Inc. All Rights Reserved.',
+      'product.up.label': 'Composite Polymorphic Robot - UP',
+      'product.vending.label': 'Smart Vending Machine Y-Cook',
+      'product.noodle.label': 'Smart Noodle Cooking Robot',
+      'product.stirfry.label': 'Intelligent Stir-Fry Robot',
+      'product.hdos.label': 'Trustworthy Agent HDOS',
+      'product.factory.label': 'AI + Factory Smart Logistics Solution',
+      'product.hospital.label': 'AI + Hospital Smart Logistics Solution',
+      'product.retail.label': 'AI + Retail Application Solutions',
+      'up.meta.title': 'Composite Polymorphic Robot — UP | Yunji Technology',
+      'up.hero.eyebrow': 'Composite Polymorphic Robot',
+      'up.hero.title': 'UP — One Robot, Infinite Functions',
+      'up.hero.subtitle': 'A revolutionary commercial service robot designed to be adaptable, cost-effective, and scalable for hotels, hospitals, factories, and commercial buildings.',
+      'up.hero.cta': 'Connect',
+      'up.philosophy.eyebrow': 'Design Philosophy',
+      'up.philosophy.title': '<span style="font-family:var(--ff-sans);font-weight:700;letter-spacing:.02em;">1 + N + AIoT</span> Architecture',
+      'up.philosophy.text': 'The UP robot is built around an innovative "1+N+AIoT" architecture, making it a truly multi-functional service partner. The modular design allows it to "lift and carry" different functional modules — such as delivery compartments, disinfection units, and patrol modules — enabling dynamic role switching based on real-time demands.',
+      'up.philosophy.spec1': '<strong>One Robot, Multiple Functions:</strong> Quickly swap modules to transform roles on demand.',
+      'up.philosophy.spec2': '<strong>Split Design:</strong> The upper compartment (with screen and cabin) separates from the chassis (with wheels), allowing multiple compartments to share a small fleet of chassis units.',
+      'up.philosophy.spec3': '<strong>Open Customization:</strong> Modular autonomous mobile platform supports standard or custom-compatible modules.',
+      'up.aiot.eyebrow': 'Connectivity',
+      'up.aiot.title': 'AIoT Integration',
+      'up.aiot.text': 'UP seamlessly connects with various IoT devices — including elevators and access control systems — enabling autonomous navigation and operation within complex environments without requiring infrastructure modifications.',
+      'up.aiot.spec1': '<strong>Autonomous Elevator Calling:</strong> Navigates across floors independently.',
+      'up.aiot.spec2': '<strong>Access Control Sync:</strong> Integrates with building security systems.',
+      'up.aiot.spec3': '<strong>Centimeter-Level Precision:</strong> Full-range perception and intelligent obstacle avoidance.',
+      'up.specs.eyebrow': 'Engineering',
+      'up.specs.title': 'UP Robot Technical Specifications',
+      'up.spec.dim': 'Dimensions (L x W x H)',
+      'up.spec.weight': 'Weight',
+      'up.spec.liftingHeight': 'Lifting Height',
+      'up.spec.liftingCapacity': 'Lifting Capacity',
+      'up.spec.speed': 'Maximum Speed',
+      'up.spec.slope': 'Maximum Climbing Slope',
+      'up.spec.step': 'Maximum Step Height',
+      'up.spec.width': 'Minimum Passable Width',
+      'up.spec.battery': 'Battery Type',
+      'up.spec.voltage': 'Charging Voltage',
+      'up.spec.chargeTime': 'Charging Time',
+      'up.spec.operatingTime': 'Operating Time',
+      'up.spec.temp': 'Operating Temperature',
+      'up.spec.humidity': 'Operating Humidity',
+      'up.spec.sensors': 'Sensors',
+      'up.advantages.eyebrow': 'Why UP',
+      'up.advantages.title': 'Key Advantages',
+      'up.advantage.1.title': 'High Cost-Effectiveness',
+      'up.advantage.1.copy': 'The modular design significantly reduces deployment costs and allows functions to be expanded as needed, offering superior value compared to single-function robots.',
+      'up.advantage.2.title': 'Strong Adaptability',
+      'up.advantage.2.copy': 'Equipped with a full-range perception system and intelligent obstacle avoidance, it navigates with centimeter-level precision and calls elevators independently.',
+      'up.advantage.3.title': 'Multi-Robot Collaboration',
+      'up.advantage.3.copy': "Integrated with Yunji's HDOS, multiple UP robots coordinate scheduling, reducing peak-hour response times to under 3 minutes and tripling delivery efficiency.",
+      'up.scenarios.eyebrow': 'Deployed Worldwide',
+      'up.scenarios.title': 'Global Recognition &amp; Applications',
+      'up.scenario.1.title': 'Hospitality',
+      'up.scenario.1.copy': 'Guest delivery, concierge service, and 24/7 in-house logistics for hotels worldwide.',
+      'up.scenario.2.title': 'Healthcare',
+      'up.scenario.2.copy': 'Sterile supply transport, pharmacy delivery, and ward logistics in 200+ facilities.',
+      'up.scenario.3.title': 'Manufacturing',
+      'up.scenario.3.copy': 'Material handling, production-line transport, and smart factory automation.',
+      'up.scenario.4.title': 'Civil Aviation',
+      'up.scenario.4.copy': 'First intelligent in-flight meal delivery at Mianyang Airport, bridging the last 100 meters of passenger service.',
+      'up.cta.title': 'The Future of Service Robotics',
+      'up.cta.text': 'The UP Composite Polymorphic Robot embodies Yunji Technology\'s commitment to creating an "Embodied AI Agent Ecosystem." By combining physical execution with intelligent decision-making, UP is not just a tool — it is a value-creating partner designed to enhance service experiences and operational efficiency across industries.',
+      'up.cta.button': 'Connect with Us',
     },
     zh: {
       'meta.title': '云迹科技 — 用科技创新驱动业务变革',
       'nav.home': '首页',
+      'nav.product': '产品',
       'nav.what': '我们做什么',
       'nav.insights': '行业洞察',
       'nav.about': '关于我们',
@@ -124,6 +189,69 @@
       'footer.contact.label2': '业务发展合作',
       'footer.contact.label3': '市场与品牌合作',
       'footer.copyright': '© 2016 - 2026 云迹科技 版权所有',
+      'product.up.label': '复合多态机器人 - UP',
+      'product.vending.label': '智能售卖机 Y-Cook',
+      'product.noodle.label': '智能制面机器人',
+      'product.stirfry.label': '智能炒菜机器人',
+      'product.hdos.label': '可信智能体 HDOS',
+      'product.factory.label': 'AI + 工厂智慧物流方案',
+      'product.hospital.label': 'AI + 医院智慧物流方案',
+      'product.retail.label': 'AI + 零售应用方案',
+      'up.meta.title': '复合多态机器人 — UP | 云迹科技',
+      'up.hero.eyebrow': '复合多态机器人',
+      'up.hero.title': 'UP — 一机多用，无限可能',
+      'up.hero.subtitle': '一款革命性的商用服务机器人，专为酒店、医院、工厂及商业楼宇设计，具备高度适应性、成本效益与可扩展性。',
+      'up.hero.cta': '联系我们',
+      'up.philosophy.eyebrow': '设计理念',
+      'up.philosophy.title': '<span style="font-family:var(--ff-sans);font-weight:700;letter-spacing:.02em;">1 + N + AIoT</span> 架构',
+      'up.philosophy.text': 'UP 机器人围绕创新的"1+N+AIoT"架构打造，是一款真正的多功能服务伙伴。模块化设计使其能够"举起并承载"不同的功能模块——如配送舱、消毒单元和巡逻模块——根据实时需求动态切换角色。',
+      'up.philosophy.spec1': '<strong>一机多用：</strong>快速更换模块，按需转换角色。',
+      'up.philosophy.spec2': '<strong>分体设计：</strong>上部舱体（含屏幕与舱室）与底盘（含轮子）分离，多个舱体可共享少量底盘单元。',
+      'up.philosophy.spec3': '<strong>开放定制：</strong>模块化自主移动平台，支持标准或定制兼容模块。',
+      'up.aiot.eyebrow': '互联互通',
+      'up.aiot.title': 'AIoT 集成',
+      'up.aiot.text': 'UP 可无缝连接各类物联网设备——包括电梯和门禁系统——实现复杂环境中的自主导航与运行，无需对基础设施进行改造。',
+      'up.aiot.spec1': '<strong>自主电梯呼叫：</strong>独立跨楼层导航。',
+      'up.aiot.spec2': '<strong>门禁同步：</strong>与楼宇安防系统集成。',
+      'up.aiot.spec3': '<strong>厘米级精度：</strong>全距感知与智能避障。',
+      'up.specs.eyebrow': '工程设计',
+      'up.specs.title': 'UP 机器人技术参数',
+      'up.spec.dim': '尺寸（长 x 宽 x 高）',
+      'up.spec.weight': '重量',
+      'up.spec.liftingHeight': '举升高度',
+      'up.spec.liftingCapacity': '举升载重',
+      'up.spec.speed': '最高速度',
+      'up.spec.slope': '最大爬坡角度',
+      'up.spec.step': '最大越障高度',
+      'up.spec.width': '最小通过宽度',
+      'up.spec.battery': '电池类型',
+      'up.spec.voltage': '充电电压',
+      'up.spec.chargeTime': '充电时间',
+      'up.spec.operatingTime': '工作时间',
+      'up.spec.temp': '工作温度',
+      'up.spec.humidity': '工作湿度',
+      'up.spec.sensors': '传感器',
+      'up.advantages.eyebrow': '为什么选择 UP',
+      'up.advantages.title': '核心优势',
+      'up.advantage.1.title': '高性价比',
+      'up.advantage.1.copy': '模块化设计大幅降低部署成本，功能可按需扩展，相比单一功能机器人具有更高的价值优势。',
+      'up.advantage.2.title': '强适应性',
+      'up.advantage.2.copy': '配备全距感知系统与智能避障功能，实现厘米级精度导航，并能独立呼叫电梯。',
+      'up.advantage.3.title': '多机协同',
+      'up.advantage.3.copy': '与云迹 HDOS 系统集成，多台 UP 机器人可协调调度，高峰期响应时间缩短至 3 分钟以内，配送效率提升三倍。',
+      'up.scenarios.eyebrow': '全球部署',
+      'up.scenarios.title': '全球认可与应用',
+      'up.scenario.1.title': '酒店文旅',
+      'up.scenario.1.copy': '全球酒店的宾客配送、礼宾服务及全天候内部物流。',
+      'up.scenario.2.title': '医疗健康',
+      'up.scenario.2.copy': '200+ 医疗机构的无菌物资运输、药房配送及病房物流。',
+      'up.scenario.3.title': '智能制造',
+      'up.scenario.3.copy': '物料搬运、产线运输及智慧工厂自动化。',
+      'up.scenario.4.title': '民航',
+      'up.scenario.4.copy': '绵阳机场首创智能航空配餐配送，打通旅客服务最后 100 米。',
+      'up.cta.title': '服务机器人的未来',
+      'up.cta.text': 'UP 复合多态机器人体现了云迹科技打造"具身 AI 智能体生态"的承诺。通过将物理执行与智能决策相结合，UP 不仅仅是一个工具——它是一位创造价值的合作伙伴，旨在提升跨行业的服务体验与运营效率。',
+      'up.cta.button': '联系我们',
     }
   };
 
@@ -136,7 +264,13 @@
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
 
     // <title>
-    if (dict['meta.title']) document.title = dict['meta.title'];
+    const pageTitleKey = document.querySelector('[data-i18n-page-title]');
+    if (pageTitleKey) {
+      const key = pageTitleKey.getAttribute('data-i18n-page-title');
+      if (dict[key] != null) document.title = dict[key];
+    } else if (dict['meta.title']) {
+      document.title = dict['meta.title'];
+    }
 
     // text-only nodes
     document.querySelectorAll('[data-i18n]').forEach((el) => {
@@ -148,6 +282,15 @@
     document.querySelectorAll('[data-i18n-html]').forEach((el) => {
       const key = el.getAttribute('data-i18n-html');
       if (dict[key] != null) el.innerHTML = dict[key];
+    });
+
+    // image src switching for language-specific assets
+    document.querySelectorAll('[data-i18n-src]').forEach((el) => {
+      try {
+        const map = JSON.parse(el.getAttribute('data-i18n-src'));
+        const path = map[lang] || map.en;
+        if (path) el.src = path;
+      } catch (_) {}
     });
 
     // Update trust-pin caption text source — main.js reads it on next render

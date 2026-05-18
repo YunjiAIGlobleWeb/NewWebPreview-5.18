@@ -7,6 +7,42 @@ const onScroll = () => {
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
+// Products dropdown
+(() => {
+  const header = document.querySelector('.nav');
+  const trigger = document.querySelector('.nav__link--dropdown');
+  if (!trigger) return;
+  let closeTimer;
+
+  const open = () => {
+    clearTimeout(closeTimer);
+    header.classList.add('is-dropdown-open');
+  };
+  const close = () => {
+    closeTimer = setTimeout(() => header.classList.remove('is-dropdown-open'), 200);
+  };
+
+  trigger.addEventListener('mouseenter', open);
+  trigger.addEventListener('mouseleave', close);
+
+  const dropdown = header.querySelector('.nav__dropdown');
+  if (dropdown) {
+    dropdown.addEventListener('mouseenter', () => clearTimeout(closeTimer));
+    dropdown.addEventListener('mouseleave', () => header.classList.remove('is-dropdown-open'));
+  }
+
+  trigger.addEventListener('click', (e) => {
+    e.preventDefault();
+    header.classList.toggle('is-dropdown-open');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav')) {
+      header.classList.remove('is-dropdown-open');
+    }
+  });
+})();
+
 // Soft fade-in on scroll for sections
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
