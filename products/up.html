@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title data-i18n-page-title="up.meta.title">Composite Polymorphic Robot — UP | Yunji Technology</title>
+<meta name="description" content="UP is Yunji Technology's flagship composite polymorphic robot. Modular, AIoT-enabled, and built for hotels, hospitals, factories, and commercial buildings." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/style.css" />
+<style>
+  .nav {
+    background: #fff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+  }
+  .nav .nav__logo img { filter: none; }
+  .nav .nav__link { color: var(--c-text); }
+  .nav .nav__cta {
+    color: var(--c-text);
+    border-color: rgba(0,0,0,0.25);
+  }
+  .nav .nav__cta:hover {
+    background: var(--c-bg-dark);
+    color: #fff;
+    border-color: var(--c-bg-dark);
+  }
+  .nav .nav__lang {
+    color: var(--c-text);
+    border-color: rgba(0,0,0,0.25);
+  }
+  .nav .nav__lang:hover {
+    background: var(--c-bg-dark);
+    color: #fff;
+    border-color: var(--c-bg-dark);
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="../index.html">
+      <img src="../assets/logo1.png" alt="Yunji" />
+    </a>
+    <nav class="nav__menu">
+      <a class="nav__link" href="../index.html#home"><span data-i18n="nav.home">Home</span><span class="nav__link-hover" data-i18n="nav.home">Home</span></a>
+      <a class="nav__link nav__link--dropdown" href="#"><span data-i18n="nav.product">Products</span><span class="nav__link-hover" data-i18n="nav.product">Products</span></a>
+      <a class="nav__link" href="../index.html#what-we-do"><span data-i18n="nav.what">What We Do</span><span class="nav__link-hover" data-i18n="nav.what">What We Do</span></a>
+      <a class="nav__link" href="../index.html#insights"><span data-i18n="nav.insights">Insights</span><span class="nav__link-hover" data-i18n="nav.insights">Insights</span></a>
+      <a class="nav__link" href="../index.html#about"><span data-i18n="nav.about">About Us</span><span class="nav__link-hover" data-i18n="nav.about">About Us</span></a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__lang" type="button" aria-label="Switch language">
+        <span class="nav__lang-current">EN</span>
+        <span class="nav__lang-divider">/</span>
+        <span class="nav__lang-other">中</span>
+      </button>
+      <a class="nav__cta" href="mailto:BD@yunji.ai">
+        <span data-i18n="nav.connect">Connect</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Products Dropdown -->
+  <div class="nav__dropdown">
+    <div class="nav__dropdown-inner">
+      <div class="nav__dropdown-grid">
+        <a class="nav__dropdown-card" href="up.html">
+          <div class="nav__dropdown-card__img">
+            <img src="../assets/dropdown-up.png" data-i18n-src='{"en":"../assets/dropdown-up.png","zh":"../assets/dropdown-up.png"}' alt="Composite Polymorphic Robot - UP" />
+          </div>
+          <span class="nav__dropdown-card__label" data-i18n="product.up.label">Composite Polymorphic Robot - UP</span>
+        </a>
+        <a class="nav__dropdown-card" href="#insights">
+          <div class="nav__dropdown-card__img">
+            <img src="../assets/dropdown-vending.png" data-i18n-src='{"en":"../assets/dropdown-vending.png","zh":"../assets/dropdown-vending.png"}' alt="Smart Vending Machine Y-Cook" />
+          </div>
+          <span class="nav__dropdown-card__label" data-i18n="product.vending.label">Smart Vending Machine Y-Cook</span>
+        </a>
+        <a class="nav__dropdown-card" href="#insights">
+          <div class="nav__dropdown-card__img">
+            <img src="../assets/dropdown-noodle.png" data-i18n-src='{"en":"../assets/dropdown-noodle.png","zh":"../assets/dropdown-noodle.png"}' alt="Smart Noodle Cooking Robot" />
+          </div>
+          <span class="nav__dropdown-card__label" data-i18n="product.noodle.label">Smart Noodle Cooking Robot</span>
+        </a>
+        <a class="nav__dropdown-card" href="#insights">
+          <div class="nav__dropdown-card__img">
+            <img src="../assets/dropdown-stirfry.png" data-i18n-src='{"en":"../assets/dropdown-stirfry.png","zh":"../assets/dropdown-stirfry.png"}' alt="Intelligent Stir-Fry Robot" />
+          </div>
+          <span class="nav__dropdown-card__label" data-i18n="product.stirfry.label">Intelligent Stir-Fry Robot</span>
+        </a>
+        <a class="nav__dropdown-card" href="#insights">
+          <div class="nav__dropdown-card__img">
+            <img src="../assets/dropdown-hdos-en.png" data-i18n-src='{"en":"../assets/dropdown-hdos-en.png","zh":"../assets/dropdown-hdos-zh.png"}' alt="Trustworthy Agent HDOS" />
+          </div>
+          <span class="nav__dropdown-card__label" data-i18n="product.hdos.label">Trustworthy Agent HDOS</span>
+        </a>
+        <a class="nav__dropdown-card" href="#insights">
+          <div class="nav__dropdown-card__img">
+            <img src="../assets/dropdown-factory-en.png" data-i18n-src='{"en":"../assets/dropdown-factory-en.png","zh":"../assets/dropdown-factory-zh.png"}' alt="AI + Factory Smart Logistics Solution" />
+          </div>
+          <span class="nav__dropdown-card__label" data-i18n="product.factory.label">AI + Factory Smart Logistics Solution</span>
+        </a>
+        <a class="nav__dropdown-card" href="#insights">
+          <div class="nav__dropdown-card__img">
+            <img src="../assets/dropdown-hospital-en.png" data-i18n-src='{"en":"../assets/dropdown-hospital-en.png","zh":"../assets/dropdown-hospital-zh.png"}' alt="AI + Hospital Smart Logistics Solution" />
+          </div>
+          <span class="nav__dropdown-card__label" data-i18n="product.hospital.label">AI + Hospital Smart Logistics Solution</span>
+        </a>
+        <a class="nav__dropdown-card" href="#insights">
+          <div class="nav__dropdown-card__img">
+            <img src="../assets/dropdown-retail-en.png" data-i18n-src='{"en":"../assets/dropdown-retail-en.png","zh":"../assets/dropdown-retail-zh.png"}' alt="AI + Retail Application Solutions" />
+          </div>
+          <span class="nav__dropdown-card__label" data-i18n="product.retail.label">AI + Retail Application Solutions</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="product-hero">
+  <div class="product-hero__media">
+    <img src="../assets/UP%20product%20detail%20page/Hero%20background%20(3).png" alt="UP Robot" style="width:100%;height:100%;object-fit:cover;display:block;" />
+  </div>
+  <div class="product-hero__inner">
+    <p class="product-hero__eyebrow" data-i18n="up.hero.eyebrow">Composite Polymorphic Robot</p>
+    <h1 class="product-hero__title" data-i18n="up.hero.title">UP — One Robot, Infinite Functions</h1>
+    <p class="product-hero__subtitle" data-i18n="up.hero.subtitle">
+      A revolutionary commercial service robot designed to be adaptable, cost-effective, and scalable for hotels, hospitals, factories, and commercial buildings.
+    </p>
+    <a class="product-hero__cta" href="mailto:BD@yunji.ai">
+      <span data-i18n="up.hero.cta">Connect</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ CORE CAPABILITIES & DESIGN PHILOSOPHY ============ -->
+<section class="product-detail">
+  <div class="product-detail__inner">
+
+    <div class="detail-block">
+      <div class="detail-block__copy">
+        <p class="detail-block__eyebrow" data-i18n="up.philosophy.eyebrow">Design Philosophy</p>
+        <h2 class="detail-block__title" data-i18n-html="up.philosophy.title"><span style="font-family:var(--ff-sans);font-weight:700;letter-spacing:.02em;">1 + N + AIoT</span> Architecture</h2>
+        <p class="detail-block__text" data-i18n="up.philosophy.text">
+          The UP robot is built around an innovative "1+N+AIoT" architecture, making it a truly multi-functional service partner. The modular design allows it to "lift and carry" different functional modules — such as delivery compartments, disinfection units, and patrol modules — enabling dynamic role switching based on real-time demands.
+        </p>
+        <ul class="detail-block__specs">
+          <li data-i18n-html="up.philosophy.spec1"><strong>One Robot, Multiple Functions:</strong> Quickly swap modules to transform roles on demand.</li>
+          <li data-i18n-html="up.philosophy.spec2"><strong>Split Design:</strong> The upper compartment (with screen and cabin) separates from the chassis (with wheels), allowing multiple compartments to share a small fleet of chassis units.</li>
+          <li data-i18n-html="up.philosophy.spec3"><strong>Open Customization:</strong> Modular autonomous mobile platform supports standard or custom-compatible modules.</li>
+        </ul>
+      </div>
+      <div class="detail-block__media">
+        <img src="../assets/UP%20product%20detail%20page/Core%20capabilities%20block%201.png" alt="UP robot with multiple modular configurations" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+    </div>
+
+    <div class="detail-block detail-block--reverse">
+      <div class="detail-block__copy">
+        <p class="detail-block__eyebrow" data-i18n="up.aiot.eyebrow">Connectivity</p>
+        <h2 class="detail-block__title" data-i18n="up.aiot.title">AIoT Integration</h2>
+        <p class="detail-block__text" data-i18n="up.aiot.text">
+          UP seamlessly connects with various IoT devices — including elevators and access control systems — enabling autonomous navigation and operation within complex environments without requiring infrastructure modifications.
+        </p>
+        <ul class="detail-block__specs">
+          <li data-i18n-html="up.aiot.spec1"><strong>Autonomous Elevator Calling:</strong> Navigates across floors independently.</li>
+          <li data-i18n-html="up.aiot.spec2"><strong>Access Control Sync:</strong> Integrates with building security systems.</li>
+          <li data-i18n-html="up.aiot.spec3"><strong>Centimeter-Level Precision:</strong> Full-range perception and intelligent obstacle avoidance.</li>
+        </ul>
+      </div>
+      <div class="detail-block__media">
+        <video src="../assets/UP%20product%20detail%20page/UP%20international%20friend%20video%20bilingual.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ TECHNICAL SPECIFICATIONS ============ -->
+<section class="product-specs" id="specs">
+  <div class="product-specs__inner">
+    <p class="product-specs__eyebrow" data-i18n="up.specs.eyebrow">Engineering</p>
+    <h2 class="product-specs__title" data-i18n="up.specs.title">UP Robot Technical Specifications</h2>
+    <div class="specs-table-wrap">
+      <table class="specs-table">
+        <tbody>
+          <tr>
+            <th data-i18n="up.spec.dim">Dimensions (L x W x H)</th>
+            <td>535 x 450 x 355 mm</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.weight">Weight</th>
+            <td>60 kg</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.liftingHeight">Lifting Height</th>
+            <td>4 cm</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.liftingCapacity">Lifting Capacity</th>
+            <td>70 kg (including compartment)</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.speed">Maximum Speed</th>
+            <td>1.5 m/s</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.slope">Maximum Climbing Slope</th>
+            <td>12° (with 20 kg load)</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.step">Maximum Step Height</th>
+            <td>20 mm</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.width">Minimum Passable Width</th>
+            <td>55 cm</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.battery">Battery Type</th>
+            <td>Lithium Iron Phosphate</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.voltage">Charging Voltage</th>
+            <td>29.4 V</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.chargeTime">Charging Time</th>
+            <td>≤ 4 hours</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.operatingTime">Operating Time</th>
+            <td>>12 hours (hard floor) / >6 hours (thick carpet)</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.temp">Operating Temperature</th>
+            <td>0 ~ 50°C</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.humidity">Operating Humidity</th>
+            <td>10% ~ 70%</td>
+          </tr>
+          <tr>
+            <th data-i18n="up.spec.sensors">Sensors</th>
+            <td>Downward camera, upward camera, 4 ultrasonic groups, 20M laser, front & rear RGB cameras, infrared ID & ranging</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEY ADVANTAGES ============ -->
+<section class="product-highlights">
+  <div class="product-highlights__inner">
+    <p class="product-highlights__eyebrow" data-i18n="up.advantages.eyebrow">Why UP</p>
+    <h2 class="product-highlights__title" data-i18n="up.advantages.title">Key Advantages</h2>
+    <div class="product-highlights__grid">
+      <article class="highlight-card">
+        <div class="highlight-card__icon">
+          <img src="../assets/UP%20product%20detail%20page/Advantage%20icon%201.png" alt="Cost effectiveness icon" style="width:100%;height:100%;object-fit:contain;display:block;" />
+        </div>
+        <h3 class="highlight-card__title" data-i18n="up.advantage.1.title">High Cost-Effectiveness</h3>
+        <p class="highlight-card__copy" data-i18n="up.advantage.1.copy">
+          The modular design significantly reduces deployment costs and allows functions to be expanded as needed, offering superior value compared to single-function robots.
+        </p>
+      </article>
+      <article class="highlight-card">
+        <div class="highlight-card__icon">
+          <img src="../assets/UP%20product%20detail%20page/Advantage%20icon%202.png" alt="Navigation precision icon" style="width:100%;height:100%;object-fit:contain;display:block;" />
+        </div>
+        <h3 class="highlight-card__title" data-i18n="up.advantage.2.title">Strong Adaptability</h3>
+        <p class="highlight-card__copy" data-i18n="up.advantage.2.copy">
+          Equipped with a full-range perception system and intelligent obstacle avoidance, it navigates with centimeter-level precision and calls elevators independently.
+        </p>
+      </article>
+      <article class="highlight-card">
+        <div class="highlight-card__icon">
+          <img src="../assets/UP%20product%20detail%20page/Advantage%20icon%203.png" alt="Multi-robot collaboration icon" style="width:100%;height:100%;object-fit:contain;display:block;" />
+        </div>
+        <h3 class="highlight-card__title" data-i18n="up.advantage.3.title">Multi-Robot Collaboration</h3>
+        <p class="highlight-card__copy" data-i18n="up.advantage.3.copy">
+          Integrated with Yunji's HDOS, multiple UP robots coordinate scheduling, reducing peak-hour response times to under 3 minutes and tripling delivery efficiency.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GLOBAL RECOGNITION & APPLICATIONS ============ -->
+<section class="product-scenarios">
+  <div class="product-scenarios__inner">
+    <p class="product-scenarios__eyebrow" data-i18n="up.scenarios.eyebrow">Deployed Worldwide</p>
+    <h2 class="product-scenarios__title" data-i18n-html="up.scenarios.title">Global Recognition &amp; Applications</h2>
+    <div class="product-scenarios__grid">
+      <article class="scenario-card">
+        <div class="scenario-card__media">
+          <img src="../assets/UP%20product%20detail%20page/Scenario%20card%201.png" alt="UP robot in hotel lobby" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="scenario-card__body">
+          <h3 data-i18n="up.scenario.1.title">Hospitality</h3>
+          <p data-i18n="up.scenario.1.copy">Guest delivery, concierge service, and 24/7 in-house logistics for hotels worldwide.</p>
+        </div>
+      </article>
+      <article class="scenario-card">
+        <div class="scenario-card__media">
+          <img src="../assets/UP%20product%20detail%20page/Scenario%20card%202.png" alt="UP robot in hospital corridor" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="scenario-card__body">
+          <h3 data-i18n="up.scenario.2.title">Healthcare</h3>
+          <p data-i18n="up.scenario.2.copy">Sterile supply transport, pharmacy delivery, and ward logistics in 200+ facilities.</p>
+        </div>
+      </article>
+      <article class="scenario-card">
+        <div class="scenario-card__media">
+          <img src="../assets/UP%20product%20detail%20page/Scenario%20card%203.png" alt="UP robot in factory warehouse" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="scenario-card__body">
+          <h3 data-i18n="up.scenario.3.title">Manufacturing</h3>
+          <p data-i18n="up.scenario.3.copy">Material handling, production-line transport, and smart factory automation.</p>
+        </div>
+      </article>
+      <article class="scenario-card">
+        <div class="scenario-card__media">
+          <img src="../assets/UP%20product%20detail%20page/Scenario%20card%204.png" alt="UP robot at airport terminal" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="scenario-card__body">
+          <h3 data-i18n="up.scenario.4.title">Civil Aviation</h3>
+          <p data-i18n="up.scenario.4.copy">First intelligent in-flight meal delivery at Mianyang Airport, bridging the last 100 meters of passenger service.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCLUSION / CTA ============ -->
+<section class="product-cta">
+  <div class="product-cta__inner">
+    <h2 class="product-cta__title" data-i18n="up.cta.title">The Future of Service Robotics</h2>
+    <p class="product-cta__text" data-i18n="up.cta.text">
+      The UP Composite Polymorphic Robot embodies Yunji Technology's commitment to creating an "Embodied AI Agent Ecosystem." By combining physical execution with intelligent decision-making, UP is not just a tool — it is a value-creating partner designed to enhance service experiences and operational efficiency across industries.
+    </p>
+    <a class="btn btn--dark" href="mailto:BD@yunji.ai">
+      <span data-i18n="up.cta.button">Connect with Us</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="connect">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <a class="footer__logo" href="../index.html">
+        <img src="../assets/logo1.png" alt="Yunji" />
+      </a>
+      <nav class="footer__nav">
+        <a href="../index.html#home" data-i18n="nav.home">Home</a>
+        <a href="#" class="footer__link--dropdown" data-i18n="nav.product">Products</a>
+        <a href="../index.html#what-we-do" data-i18n="nav.what">What We Do</a>
+        <a href="../index.html#insights" data-i18n="nav.insights">Insights</a>
+        <a href="../index.html#about" data-i18n="nav.about">About Us</a>
+      </nav>
+    </div>
+
+    <div class="footer__contact">
+      <div class="footer__col">
+        <h4 class="footer__col-title" data-i18n="footer.offices.title">Offices</h4>
+        <p class="footer__col-item">
+          <span class="footer__col-label" data-i18n="footer.offices.bjLabel">Beijing (HQ)</span>
+          <span data-i18n="footer.offices.bjAddr">Block B, Building 1, Zhongguancun Dongsheng International Science Park, No. 1 Yongtaizhuang North Road, Haidian District, Beijing</span>
+        </p>
+        <p class="footer__col-item">
+          <span class="footer__col-label" data-i18n="footer.offices.hkLabel">Hong Kong</span>
+          <span data-i18n="footer.offices.hkAddr">Smart Space Room 48, 6/F, Zone C, Block 3, Cyberport</span>
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title" data-i18n="footer.hotline.title">Hotline</h4>
+        <p class="footer__col-item">
+          <span class="footer__col-label" data-i18n="footer.hotline.label1">After-sales / Service</span>
+          <a href="tel:4006080917">400-608-0917</a>
+        </p>
+        <p class="footer__col-item">
+          <span class="footer__col-label" data-i18n="footer.hotline.label2">Business / Channel / Brand</span>
+          <a href="tel:4001681151">400-168-1151</a>
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title" data-i18n="footer.contact.title">Contact</h4>
+        <p class="footer__col-item">
+          <span class="footer__col-label" data-i18n="footer.contact.label1">Integrity &amp; Compliance</span>
+          <a href="mailto:yangguang@yunji.ai">yangguang@yunji.ai</a>
+        </p>
+        <p class="footer__col-item">
+          <span class="footer__col-label" data-i18n="footer.contact.label2">Business Development</span>
+          <a href="mailto:bd@yunji.ai">bd@yunji.ai</a>
+        </p>
+        <p class="footer__col-item">
+          <span class="footer__col-label" data-i18n="footer.contact.label3">Marketing &amp; Brand</span>
+          <a href="mailto:Marketing@yunji.ai">Marketing@yunji.ai</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__divider"></div>
+    <div class="footer__bottom">
+      <p data-i18n="footer.copyright">© 2016 - 2026 Technology Inc. All Rights Reserved.</p>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/profile.php?id=61584071516240" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 4.99 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.89h-2.33V22c4.78-.75 8.44-4.89 8.44-9.94Z"/>
+          </svg>
+        </a>
+        <a href="https://x.com/YunjiTechnology" aria-label="X" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.656l-5.214-6.817-5.965 6.817H1.683l7.73-8.835L1.254 2.25h6.824l4.713 6.231 5.453-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@YunJiTechnology" aria-label="YouTube" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.52 3.55 12 3.55 12 3.55s-7.52 0-9.39.53A3 3 0 0 0 .5 6.2C0 8.08 0 12 0 12s0 3.92.5 5.8a3 3 0 0 0 2.11 2.12c1.87.53 9.39.53 9.39.53s7.52 0 9.39-.53a3 3 0 0 0 2.11-2.12C24 15.92 24 12 24 12s0-3.92-.5-5.8ZM9.6 15.57V8.43L15.82 12 9.6 15.57Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="to-top" type="button" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 13V3M8 3L3 8M8 3L13 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
