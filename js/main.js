@@ -11,6 +11,7 @@ onScroll();
 (() => {
   const header = document.querySelector('.nav');
   const trigger = document.querySelector('.nav__link--dropdown');
+  const footerTrigger = document.querySelector('.footer__link--dropdown');
   if (!trigger) return;
   let closeTimer;
 
@@ -41,6 +42,12 @@ onScroll();
       header.classList.remove('is-dropdown-open');
     }
   });
+
+  // Footer Products link also triggers the header dropdown
+  if (footerTrigger) {
+    footerTrigger.addEventListener('mouseenter', open);
+    footerTrigger.addEventListener('mouseleave', close);
+  }
 })();
 
 // Soft fade-in on scroll for sections

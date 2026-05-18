@@ -9,6 +9,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../css/style.css" />
+<style>
+  .nav {
+    background: #fff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+  }
+  .nav .nav__logo img { filter: none; }
+  .nav .nav__link { color: var(--c-text); }
+  .nav .nav__cta {
+    color: var(--c-text);
+    border-color: rgba(0,0,0,0.25);
+  }
+  .nav .nav__cta:hover {
+    background: var(--c-bg-dark);
+    color: #fff;
+    border-color: var(--c-bg-dark);
+  }
+  .nav .nav__lang {
+    color: var(--c-text);
+    border-color: rgba(0,0,0,0.25);
+  }
+  .nav .nav__lang:hover {
+    background: var(--c-bg-dark);
+    color: #fff;
+    border-color: var(--c-bg-dark);
+  }
+</style>
 </head>
 <body>
 
@@ -100,9 +130,8 @@
 <!-- ============ HERO ============ -->
 <section class="product-hero">
   <div class="product-hero__media">
-    <img src="../assets/UP%20product%20detail%20page/Hero%20background.png" alt="UP Robot" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    <img src="../assets/UP%20product%20detail%20page/Hero%20background%20(3).png" alt="UP Robot" style="width:100%;height:100%;object-fit:cover;display:block;" />
   </div>
-  <div class="product-hero__overlay"></div>
   <div class="product-hero__inner">
     <p class="product-hero__eyebrow" data-i18n="up.hero.eyebrow">Composite Polymorphic Robot</p>
     <h1 class="product-hero__title" data-i18n="up.hero.title">UP — One Robot, Infinite Functions</h1>
@@ -343,7 +372,7 @@
       </a>
       <nav class="footer__nav">
         <a href="../index.html#home" data-i18n="nav.home">Home</a>
-        <a href="#" data-i18n="nav.product">Products</a>
+        <a href="#" class="footer__link--dropdown" data-i18n="nav.product">Products</a>
         <a href="../index.html#what-we-do" data-i18n="nav.what">What We Do</a>
         <a href="../index.html#insights" data-i18n="nav.insights">Insights</a>
         <a href="../index.html#about" data-i18n="nav.about">About Us</a>
