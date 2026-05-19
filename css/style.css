@@ -184,6 +184,7 @@ em { font-style: italic; font-family: var(--ff-serif); font-weight: 500; }
   cursor: pointer;
   padding: 0;
   flex-shrink: 0;
+  color: #fff;
 }
 .nav__toggle span {
   display: block;

@@ -45,8 +45,21 @@ onScroll();
 
   // Footer Products link also triggers the header dropdown
   if (footerTrigger) {
-    footerTrigger.addEventListener('mouseenter', open);
-    footerTrigger.addEventListener('mouseleave', close);
+    footerTrigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (window.matchMedia('(max-width: 900px)').matches) {
+        header.classList.add('is-mobile-open');
+        document.body.style.overflow = 'hidden';
+        const toggle = header.querySelector('.nav__toggle');
+        if (toggle) toggle.setAttribute('aria-expanded', 'true');
+        const mobileDropdown = header.querySelector('.nav__mobile-dropdown');
+        if (mobileDropdown) mobileDropdown.classList.add('is-open');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        header.classList.toggle('is-dropdown-open');
+      }
+    });
   }
 })();
 
