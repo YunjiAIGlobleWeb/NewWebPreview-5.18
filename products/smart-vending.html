@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title data-i18n-page-title="up.meta.title">Composite Polymorphic Robot — UP | Yunji Technology</title>
-<meta name="description" content="UP is Yunji Technology's flagship composite polymorphic robot. Modular, AIoT-enabled, and built for hotels, hospitals, factories, and commercial buildings." />
+<title data-i18n-page-title="vending.meta.title">Smart Vending Machine — Y-Cool | Yunji Technology</title>
+<meta name="description" content="Y-Cool is Yunji Technology's smart vending machine with front-end warehouse, designed for hotel intelligent new retail and automated service delivery." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -37,6 +37,47 @@
     background: var(--c-bg-dark);
     color: #fff;
     border-color: var(--c-bg-dark);
+  }
+  .placeholder-block {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  .placeholder-block__content {
+    background: #f5f5f5;
+    border: 1px dashed #bbb;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 480px;
+  }
+  .placeholder-block__content h4 {
+    margin: 0 0 0.75rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #666;
+    font-family: var(--ff-sans);
+  }
+  .placeholder-block__content p {
+    margin: 0.25rem 0;
+    font-size: 0.8125rem;
+    color: #444;
+    line-height: 1.5;
+    font-family: var(--ff-sans);
+  }
+  .placeholder-block__content strong {
+    color: #222;
+  }
+  .placeholder-block__divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0.75rem 0;
   }
   .nav .nav__toggle {
     color: var(--c-text);
@@ -212,16 +253,24 @@
 <!-- ============ HERO ============ -->
 <section class="product-hero">
   <div class="product-hero__media">
-    <img src="../assets/UP%20product%20detail%20page/Hero%20background%20(3).webp" alt="UP Robot" style="width:100%;height:100%;object-fit:cover;display:block;" />
+    <div class="placeholder-block">
+      <div class="placeholder-block__content">
+        <h4>Hero Background</h4>
+        <p><strong>Context:</strong> Y-Cool Smart Vending Machine hero KV (studio shot or hotel lobby setting, single machine or dual-model display)</p>
+        <hr class="placeholder-block__divider" />
+        <p><strong>Suggested Format:</strong> .jpg / .png &rarr; WebP</p>
+        <p><strong>Resolution:</strong> 1920 x 1080</p>
+      </div>
+    </div>
   </div>
   <div class="product-hero__inner">
-    <p class="product-hero__eyebrow" data-i18n="up.hero.eyebrow">Composite Polymorphic Robot</p>
-    <h1 class="product-hero__title" data-i18n="up.hero.title">UP — One Robot, Infinite Functions</h1>
-    <p class="product-hero__subtitle" data-i18n="up.hero.subtitle">
-      A revolutionary commercial service robot designed to be adaptable, cost-effective, and scalable for hotels, hospitals, factories, and commercial buildings.
+    <p class="product-hero__eyebrow" data-i18n="vending.hero.eyebrow">Smart Vending Machine</p>
+    <h1 class="product-hero__title" data-i18n="vending.hero.title">Y-Cool — Hotel Intelligent New Retail</h1>
+    <p class="product-hero__subtitle" data-i18n="vending.hero.subtitle">
+      A revolutionary front-end warehouse smart vending machine designed to boost non-room revenue, upgrade guest experience, and reduce labor costs for hotels and commercial spaces.
     </p>
     <a class="product-hero__cta" href="mailto:BD@yunji.ai">
-      <span data-i18n="up.hero.cta">Connect</span>
+      <span data-i18n="vending.hero.cta">Connect</span>
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
@@ -235,37 +284,53 @@
 
     <div class="detail-block">
       <div class="detail-block__copy">
-        <p class="detail-block__eyebrow" data-i18n="up.philosophy.eyebrow">Design Philosophy</p>
-        <h2 class="detail-block__title" data-i18n-html="up.philosophy.title"><span style="font-family:var(--ff-sans);font-weight:700;letter-spacing:.02em;">1 + N + AIoT</span> Architecture</h2>
-        <p class="detail-block__text" data-i18n="up.philosophy.text">
-          The UP robot is built around an innovative "1+N+AIoT" architecture, making it a truly multi-functional service partner. The modular design allows it to "lift and carry" different functional modules — such as delivery compartments, disinfection units, and patrol modules — enabling dynamic role switching based on real-time demands.
+        <p class="detail-block__eyebrow" data-i18n="vending.philosophy.eyebrow">Design Philosophy</p>
+        <h2 class="detail-block__title" data-i18n-html="vending.philosophy.title"><span style="font-family:var(--ff-sans);font-weight:700;letter-spacing:.02em;">Front-End Warehouse</span> Smart Retail</h2>
+        <p class="detail-block__text" data-i18n="vending.philosophy.text">
+          The Y-Cool smart vending machine is built around a front-end warehouse concept, enabling hotels to offer a rich online mall and automated in-room delivery. Its modular cargo-channel design supports various product types, from bagged goods to bottled beverages, with intelligent inventory management.
         </p>
         <ul class="detail-block__specs">
-          <li data-i18n-html="up.philosophy.spec1"><strong>One Robot, Multiple Functions:</strong> Quickly swap modules to transform roles on demand.</li>
-          <li data-i18n-html="up.philosophy.spec2"><strong>Split Design:</strong> The upper compartment (with screen and cabin) separates from the chassis (with wheels), allowing multiple compartments to share a small fleet of chassis units.</li>
-          <li data-i18n-html="up.philosophy.spec3"><strong>Open Customization:</strong> Modular autonomous mobile platform supports standard or custom-compatible modules.</li>
+          <li data-i18n-html="vending.philosophy.spec1"><strong>Rich Online Mall:</strong> Guest rooms have access to the mall. In addition to small commodities, hotel-derived products, holiday gifts, and sleep-related products can be launched.</li>
+          <li data-i18n-html="vending.philosophy.spec2"><strong>Automated Closed-Loop Service:</strong> Common guest supplies can be placed in the vending machine. Robots &ldquo;receive orders &ndash; deliver items&rdquo; without service staff involvement.</li>
+          <li data-i18n-html="vending.philosophy.spec3"><strong>Smart Mobile Management:</strong> One-click restocking via mini-program, intelligent back-end inventory checking, and shelf-life reminders.</li>
         </ul>
       </div>
       <div class="detail-block__media">
-        <img src="../assets/UP%20product%20detail%20page/Core%20capabilities%20block%201.webp" alt="UP robot with multiple modular configurations" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        <div class="placeholder-block">
+          <div class="placeholder-block__content">
+            <h4>Core Capabilities Block 1</h4>
+            <p><strong>Context:</strong> Y-Cool vending machine showing product display and modular front-end warehouse design (close-up of product compartments or full machine in hotel setting)</p>
+            <hr class="placeholder-block__divider" />
+            <p><strong>Suggested Format:</strong> .png / .jpg &rarr; WebP</p>
+            <p><strong>Resolution:</strong> 1200 x 900</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="detail-block detail-block--reverse">
       <div class="detail-block__copy">
-        <p class="detail-block__eyebrow" data-i18n="up.aiot.eyebrow">Connectivity</p>
-        <h2 class="detail-block__title" data-i18n="up.aiot.title">AIoT Integration</h2>
-        <p class="detail-block__text" data-i18n="up.aiot.text">
-          UP seamlessly connects with various IoT devices — including elevators and access control systems — enabling autonomous navigation and operation within complex environments without requiring infrastructure modifications.
+        <p class="detail-block__eyebrow" data-i18n="vending.service.eyebrow">Service Experience</p>
+        <h2 class="detail-block__title" data-i18n="vending.service.title">Intelligent Shopping &amp; Delivery</h2>
+        <p class="detail-block__text" data-i18n="vending.service.text">
+          The Y-Cool provides an intelligent shopping and delivery experience that enhances positive reviews for the hotel&rsquo;s technological services. The online mall focuses on guests&rsquo; private shopping experience, offering considerate and thoughtful services while reducing hotel labor costs.
         </p>
         <ul class="detail-block__specs">
-          <li data-i18n-html="up.aiot.spec1"><strong>Autonomous Elevator Calling:</strong> Navigates across floors independently.</li>
-          <li data-i18n-html="up.aiot.spec2"><strong>Access Control Sync:</strong> Integrates with building security systems.</li>
-          <li data-i18n-html="up.aiot.spec3"><strong>Centimeter-Level Precision:</strong> Full-range perception and intelligent obstacle avoidance.</li>
+          <li data-i18n-html="vending.service.spec1"><strong>Service Quality Upgrade:</strong> Robot shopping/delivery experience boosts tech-service reviews and repeat stay rates.</li>
+          <li data-i18n-html="vending.service.spec2"><strong>Private Shopping Experience:</strong> Online mall focuses on guests&rsquo; private shopping needs with considerate services.</li>
+          <li data-i18n-html="vending.service.spec3"><strong>Data-Driven Operations:</strong> Real-time monitoring of sales status and multi-dimensional marketing data analysis.</li>
         </ul>
       </div>
       <div class="detail-block__media">
-        <video src="../assets/UP%20product%20detail%20page/UP%20international%20friend%20video%20bilingual.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>
+        <div class="placeholder-block">
+          <div class="placeholder-block__content">
+            <h4>Core Capabilities Block 2</h4>
+            <p><strong>Context:</strong> Robot delivering items from vending machine to hotel room, or Y-Cool vending machine in hotel corridor with ambient lighting</p>
+            <hr class="placeholder-block__divider" />
+            <p><strong>Suggested Format:</strong> .mp4 (video)</p>
+            <p><strong>Resolution:</strong> 1920 x 1080</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -275,70 +340,57 @@
 <!-- ============ TECHNICAL SPECIFICATIONS ============ -->
 <section class="product-specs" id="specs">
   <div class="product-specs__inner">
-    <p class="product-specs__eyebrow" data-i18n="up.specs.eyebrow">Engineering</p>
-    <h2 class="product-specs__title" data-i18n="up.specs.title">UP Robot Technical Specifications</h2>
+    <p class="product-specs__eyebrow" data-i18n="vending.specs.eyebrow">Engineering</p>
+    <h2 class="product-specs__title" data-i18n="vending.specs.title">Y-Cool &amp; Y-Smart Technical Specifications</h2>
     <div class="specs-table-wrap">
       <table class="specs-table">
+        <thead>
+          <tr>
+            <th data-i18n="vending.spec.item">Item</th>
+            <th data-i18n="vending.spec.ycool">Y-Cool</th>
+            <th data-i18n="vending.spec.ysmart">Y-Smart</th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
-            <th data-i18n="up.spec.dim">Dimensions (L x W x H)</th>
-            <td>535 x 450 x 355 mm</td>
+            <th data-i18n="vending.spec.dim">Dimensions (H x W x D)</th>
+            <td>1990 x 827 x 880 mm</td>
+            <td>1915 x 1065 x 1040 mm</td>
           </tr>
           <tr>
-            <th data-i18n="up.spec.weight">Weight</th>
-            <td>60 kg</td>
+            <th data-i18n="vending.spec.weight">Weight</th>
+            <td>235 kg</td>
+            <td>240 kg</td>
           </tr>
           <tr>
-            <th data-i18n="up.spec.liftingHeight">Lifting Height</th>
-            <td>4 cm</td>
+            <th data-i18n="vending.spec.commodities">Sold Commodities</th>
+            <td>Bagged / plastic-bottled / canned goods, some guest supplies</td>
+            <td>Hotel guest supplies, daily necessities, family-planning supplies, bagged/plastic-bottled/canned goods</td>
           </tr>
           <tr>
-            <th data-i18n="up.spec.liftingCapacity">Lifting Capacity</th>
-            <td>70 kg (including compartment)</td>
+            <th data-i18n="vending.spec.channels">Cargo Channels</th>
+            <td>29 total</td>
+            <td>31 total</td>
           </tr>
           <tr>
-            <th data-i18n="up.spec.speed">Maximum Speed</th>
-            <td>1.5 m/s</td>
+            <th data-i18n="vending.spec.capacity">Capacity</th>
+            <td>145&ndash;165 pieces</td>
+            <td>~361 pieces</td>
           </tr>
           <tr>
-            <th data-i18n="up.spec.slope">Maximum Climbing Slope</th>
-            <td>12° (with 20 kg load)</td>
+            <th data-i18n="vending.spec.refrigeration">Refrigeration</th>
+            <td>Supports refrigeration &amp; normal temperature</td>
+            <td>Normal temperature only</td>
           </tr>
           <tr>
-            <th data-i18n="up.spec.step">Maximum Step Height</th>
-            <td>20 mm</td>
+            <th data-i18n="vending.spec.voltage">Working Voltage</th>
+            <td>220VAC @ 50Hz</td>
+            <td>220VAC @ 50Hz</td>
           </tr>
           <tr>
-            <th data-i18n="up.spec.width">Minimum Passable Width</th>
-            <td>55 cm</td>
-          </tr>
-          <tr>
-            <th data-i18n="up.spec.battery">Battery Type</th>
-            <td>Lithium Iron Phosphate</td>
-          </tr>
-          <tr>
-            <th data-i18n="up.spec.voltage">Charging Voltage</th>
-            <td>29.4 V</td>
-          </tr>
-          <tr>
-            <th data-i18n="up.spec.chargeTime">Charging Time</th>
-            <td>≤ 4 hours</td>
-          </tr>
-          <tr>
-            <th data-i18n="up.spec.operatingTime">Operating Time</th>
-            <td>>12 hours (hard floor) / >6 hours (thick carpet)</td>
-          </tr>
-          <tr>
-            <th data-i18n="up.spec.temp">Operating Temperature</th>
-            <td>0 ~ 50°C</td>
-          </tr>
-          <tr>
-            <th data-i18n="up.spec.humidity">Operating Humidity</th>
-            <td>10% ~ 70%</td>
-          </tr>
-          <tr>
-            <th data-i18n="up.spec.sensors">Sensors</th>
-            <td>Downward camera, upward camera, 4 ultrasonic groups, 20M laser, front & rear RGB cameras, infrared ID & ranging</td>
+            <th data-i18n="vending.spec.power">Power</th>
+            <td>&lt; 35W (no refrigeration); &lt; 600W (compressor on)</td>
+            <td>25W standby; 40W operating</td>
           </tr>
         </tbody>
       </table>
@@ -349,34 +401,55 @@
 <!-- ============ KEY ADVANTAGES ============ -->
 <section class="product-highlights">
   <div class="product-highlights__inner">
-    <p class="product-highlights__eyebrow" data-i18n="up.advantages.eyebrow">Why UP</p>
-    <h2 class="product-highlights__title" data-i18n="up.advantages.title">Key Advantages</h2>
+    <p class="product-highlights__eyebrow" data-i18n="vending.advantages.eyebrow">Why Y-Cool</p>
+    <h2 class="product-highlights__title" data-i18n="vending.advantages.title">Key Advantages</h2>
     <div class="product-highlights__grid">
       <article class="highlight-card">
         <div class="highlight-card__icon">
-          <img src="../assets/UP%20product%20detail%20page/Advantage%20icon%201.webp" alt="Cost effectiveness icon" style="width:100%;height:100%;object-fit:contain;display:block;" />
+          <div class="placeholder-block" style="min-height:120px;">
+            <div class="placeholder-block__content" style="max-width:220px;padding:1rem;">
+              <h4 style="font-size:0.75rem;">Advantage Icon 1</h4>
+              <p style="font-size:0.75rem;"><strong>Context:</strong> Revenue increase / online mall icon</p>
+              <p style="font-size:0.75rem;"><strong>Format:</strong> .png &rarr; WebP</p>
+              <p style="font-size:0.75rem;"><strong>Resolution:</strong> 200 x 200</p>
+            </div>
+          </div>
         </div>
-        <h3 class="highlight-card__title" data-i18n="up.advantage.1.title">High Cost-Effectiveness</h3>
-        <p class="highlight-card__copy" data-i18n="up.advantage.1.copy">
-          The modular design significantly reduces deployment costs and allows functions to be expanded as needed, offering superior value compared to single-function robots.
+        <h3 class="highlight-card__title" data-i18n="vending.advantage.1.title">Increase Non-Room Revenue</h3>
+        <p class="highlight-card__copy" data-i18n="vending.advantage.1.copy">
+          Rich online mall increases ancillary revenue through guest supplies, hotel-derived products, F&amp;B, and seasonal offerings — all accessible from the guest room.
         </p>
       </article>
       <article class="highlight-card">
         <div class="highlight-card__icon">
-          <img src="../assets/UP%20product%20detail%20page/Advantage%20icon%202.webp" alt="Navigation precision icon" style="width:100%;height:100%;object-fit:contain;display:block;" />
+          <div class="placeholder-block" style="min-height:120px;">
+            <div class="placeholder-block__content" style="max-width:220px;padding:1rem;">
+              <h4 style="font-size:0.75rem;">Advantage Icon 2</h4>
+              <p style="font-size:0.75rem;"><strong>Context:</strong> Service quality / robot delivery icon</p>
+              <p style="font-size:0.75rem;"><strong>Format:</strong> .png &rarr; WebP</p>
+              <p style="font-size:0.75rem;"><strong>Resolution:</strong> 200 x 200</p>
+            </div>
+          </div>
         </div>
-        <h3 class="highlight-card__title" data-i18n="up.advantage.2.title">Strong Adaptability</h3>
-        <p class="highlight-card__copy" data-i18n="up.advantage.2.copy">
-          Equipped with a full-range perception system and intelligent obstacle avoidance, it navigates with centimeter-level precision and calls elevators independently.
+        <h3 class="highlight-card__title" data-i18n="vending.advantage.2.title">Upgrade Service Quality</h3>
+        <p class="highlight-card__copy" data-i18n="vending.advantage.2.copy">
+          Intelligent robot delivery experience enhances guest satisfaction and drives positive reviews. The private online shopping experience is considerate and thoughtful.
         </p>
       </article>
       <article class="highlight-card">
         <div class="highlight-card__icon">
-          <img src="../assets/UP%20product%20detail%20page/Advantage%20icon%203.webp" alt="Multi-robot collaboration icon" style="width:100%;height:100%;object-fit:contain;display:block;" />
+          <div class="placeholder-block" style="min-height:120px;">
+            <div class="placeholder-block__content" style="max-width:220px;padding:1rem;">
+              <h4 style="font-size:0.75rem;">Advantage Icon 3</h4>
+              <p style="font-size:0.75rem;"><strong>Context:</strong> Smart management / data analytics icon</p>
+              <p style="font-size:0.75rem;"><strong>Format:</strong> .png &rarr; WebP</p>
+              <p style="font-size:0.75rem;"><strong>Resolution:</strong> 200 x 200</p>
+            </div>
+          </div>
         </div>
-        <h3 class="highlight-card__title" data-i18n="up.advantage.3.title">Multi-Robot Collaboration</h3>
-        <p class="highlight-card__copy" data-i18n="up.advantage.3.copy">
-          Integrated with Yunji's HDOS, multiple UP robots coordinate scheduling, reducing peak-hour response times to under 3 minutes and tripling delivery efficiency.
+        <h3 class="highlight-card__title" data-i18n="vending.advantage.3.title">Reduce Labor Costs</h3>
+        <p class="highlight-card__copy" data-i18n="vending.advantage.3.copy">
+          Automated &ldquo;order-to-delivery&rdquo; closed-loop service liberates staff from routine delivery tasks. One-click restocking and intelligent inventory checking save management time.
         </p>
       </article>
     </div>
@@ -386,43 +459,75 @@
 <!-- ============ GLOBAL RECOGNITION & APPLICATIONS ============ -->
 <section class="product-scenarios">
   <div class="product-scenarios__inner">
-    <p class="product-scenarios__eyebrow" data-i18n="up.scenarios.eyebrow">Deployed Worldwide</p>
-    <h2 class="product-scenarios__title" data-i18n-html="up.scenarios.title">Global Recognition &amp; Applications</h2>
+    <p class="product-scenarios__eyebrow" data-i18n="vending.scenarios.eyebrow">Deployed Worldwide</p>
+    <h2 class="product-scenarios__title" data-i18n-html="vending.scenarios.title">Global Recognition &amp; Applications</h2>
     <div class="product-scenarios__grid">
       <article class="scenario-card">
         <div class="scenario-card__media">
-          <img src="../assets/UP%20product%20detail%20page/Scenario%20card%201.webp" alt="UP robot in hotel lobby" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="placeholder-block">
+            <div class="placeholder-block__content">
+              <h4>Scenario Card 1</h4>
+              <p><strong>Context:</strong> Y-Cool vending machine in hotel lobby or guest room corridor</p>
+              <hr class="placeholder-block__divider" />
+              <p><strong>Format:</strong> .jpg / .png &rarr; WebP</p>
+              <p><strong>Resolution:</strong> 800 x 600</p>
+            </div>
+          </div>
         </div>
         <div class="scenario-card__body">
-          <h3 data-i18n="up.scenario.1.title">Hospitality</h3>
-          <p data-i18n="up.scenario.1.copy">Guest delivery, concierge service, and 24/7 in-house logistics for hotels worldwide.</p>
+          <h3 data-i18n="vending.scenario.1.title">Hospitality</h3>
+          <p data-i18n="vending.scenario.1.copy">Hotels, resorts, and serviced apartments. In-room shopping and automated delivery enhance the guest experience.</p>
         </div>
       </article>
       <article class="scenario-card">
         <div class="scenario-card__media">
-          <img src="../assets/UP%20product%20detail%20page/Scenario%20card%202.webp" alt="UP robot in hospital corridor" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="placeholder-block">
+            <div class="placeholder-block__content">
+              <h4>Scenario Card 2</h4>
+              <p><strong>Context:</strong> Vending machine in hospital corridor or clinic waiting area</p>
+              <hr class="placeholder-block__divider" />
+              <p><strong>Format:</strong> .jpg / .png &rarr; WebP</p>
+              <p><strong>Resolution:</strong> 800 x 600</p>
+            </div>
+          </div>
         </div>
         <div class="scenario-card__body">
-          <h3 data-i18n="up.scenario.2.title">Healthcare</h3>
-          <p data-i18n="up.scenario.2.copy">Sterile supply transport, pharmacy delivery, and ward logistics in 200+ facilities.</p>
+          <h3 data-i18n="vending.scenario.2.title">Healthcare</h3>
+          <p data-i18n="vending.scenario.2.copy">Hospitals, clinics, and eldercare facilities. Convenient access to supplies and patient amenities.</p>
         </div>
       </article>
       <article class="scenario-card">
         <div class="scenario-card__media">
-          <img src="../assets/UP%20product%20detail%20page/Scenario%20card%203.webp" alt="UP robot in factory warehouse" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="placeholder-block">
+            <div class="placeholder-block__content">
+              <h4>Scenario Card 3</h4>
+              <p><strong>Context:</strong> Vending machine in commercial building lobby or office pantry</p>
+              <hr class="placeholder-block__divider" />
+              <p><strong>Format:</strong> .jpg / .png &rarr; WebP</p>
+              <p><strong>Resolution:</strong> 800 x 600</p>
+            </div>
+          </div>
         </div>
         <div class="scenario-card__body">
-          <h3 data-i18n="up.scenario.3.title">Manufacturing</h3>
-          <p data-i18n="up.scenario.3.copy">Material handling, production-line transport, and smart factory automation.</p>
+          <h3 data-i18n="vending.scenario.3.title">Commercial Buildings</h3>
+          <p data-i18n="vending.scenario.3.copy">Offices, co-working spaces, and business centers. Employee convenience retail and amenity access.</p>
         </div>
       </article>
       <article class="scenario-card">
         <div class="scenario-card__media">
-          <img src="../assets/UP%20product%20detail%20page/Scenario%20card%204.webp" alt="UP robot at airport terminal" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <div class="placeholder-block">
+            <div class="placeholder-block__content">
+              <h4>Scenario Card 4</h4>
+              <p><strong>Context:</strong> Vending machine in apartment complex or residential building common area</p>
+              <hr class="placeholder-block__divider" />
+              <p><strong>Format:</strong> .jpg / .png &rarr; WebP</p>
+              <p><strong>Resolution:</strong> 800 x 600</p>
+            </div>
+          </div>
         </div>
         <div class="scenario-card__body">
-          <h3 data-i18n="up.scenario.4.title">Civil Aviation</h3>
-          <p data-i18n="up.scenario.4.copy">First intelligent in-flight meal delivery at Mianyang Airport, bridging the last 100 meters of passenger service.</p>
+          <h3 data-i18n="vending.scenario.4.title">Residential</h3>
+          <p data-i18n="vending.scenario.4.copy">Apartment complexes, student housing, and gated communities. 24/7 resident convenience and essential supplies.</p>
         </div>
       </article>
     </div>
@@ -432,12 +537,12 @@
 <!-- ============ CONCLUSION / CTA ============ -->
 <section class="product-cta">
   <div class="product-cta__inner">
-    <h2 class="product-cta__title" data-i18n="up.cta.title">The Future of Service Robotics</h2>
-    <p class="product-cta__text" data-i18n="up.cta.text">
-      The UP Composite Polymorphic Robot embodies Yunji Technology's commitment to creating an "Embodied AI Agent Ecosystem." By combining physical execution with intelligent decision-making, UP is not just a tool — it is a value-creating partner designed to enhance service experiences and operational efficiency across industries.
+    <h2 class="product-cta__title" data-i18n="vending.cta.title">The Future of Hotel Retail</h2>
+    <p class="product-cta__text" data-i18n="vending.cta.text">
+      The Y-Cool Smart Vending Machine embodies Yunji Technology's commitment to intelligent service ecosystems. By combining automated retail with robotic delivery, Y-Cool transforms hotel operations and creates new revenue streams while enhancing the guest experience.
     </p>
     <a class="btn btn--dark" href="mailto:BD@yunji.ai">
-      <span data-i18n="up.cta.button">Connect with Us</span>
+      <span data-i18n="vending.cta.button">Connect with Us</span>
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
@@ -505,7 +610,7 @@
 
     <div class="footer__divider"></div>
     <div class="footer__bottom">
-      <p data-i18n="footer.copyright">© 2016 - 2026 Technology Inc. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">&copy; 2016 - 2026 Technology Inc. All Rights Reserved.</p>
       <div class="footer__social">
         <a href="https://www.facebook.com/profile.php?id=61584071516240" aria-label="Facebook" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

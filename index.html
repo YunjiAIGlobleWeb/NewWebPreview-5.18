@@ -37,6 +37,11 @@
           <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </a>
+      <button class="nav__toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </div>
 
@@ -50,11 +55,11 @@
           </div>
           <span class="nav__dropdown-card__label" data-i18n="product.up.label">Composite Polymorphic Robot - UP</span>
         </a>
-        <a class="nav__dropdown-card" href="#insights">
+        <a class="nav__dropdown-card" href="products/smart-vending.html">
           <div class="nav__dropdown-card__img">
-            <img src="assets/dropdown-vending.webp" data-i18n-src='{"en":"assets/dropdown-vending.webp","zh":"assets/dropdown-vending.webp"}' alt="Smart Vending Machine Y-Cook" />
+            <img src="assets/dropdown-vending.webp" data-i18n-src='{"en":"assets/dropdown-vending.webp","zh":"assets/dropdown-vending.webp"}' alt="Smart Vending Machine Y-Cool" />
           </div>
-          <span class="nav__dropdown-card__label" data-i18n="product.vending.label">Smart Vending Machine Y-Cook</span>
+          <span class="nav__dropdown-card__label" data-i18n="product.vending.label">Smart Vending Machine Y-Cool</span>
         </a>
         <a class="nav__dropdown-card" href="#insights">
           <div class="nav__dropdown-card__img">
@@ -93,6 +98,74 @@
           <span class="nav__dropdown-card__label" data-i18n="product.retail.label">AI + Retail Application Solutions</span>
         </a>
       </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile">
+    <button class="nav__mobile-close" type="button" aria-label="Close menu">&times;</button>
+    <nav class="nav__mobile-menu">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <div class="nav__mobile-dropdown">
+        <button class="nav__mobile-dropdown-toggle" type="button">
+          <span data-i18n="nav.product">Products</span>
+          <span class="nav__mobile-chevron">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </span>
+        </button>
+        <div class="nav__mobile-dropdown-menu">
+          <a href="products/up.html">
+            <img src="assets/dropdown-up.webp" alt="" />
+            <span data-i18n="product.up.label">Composite Polymorphic Robot - UP</span>
+          </a>
+          <a href="products/smart-vending.html">
+            <img src="assets/dropdown-vending.webp" alt="" />
+            <span data-i18n="product.vending.label">Smart Vending Machine Y-Cool</span>
+          </a>
+          <a href="#insights">
+            <img src="assets/dropdown-noodle.webp" alt="" />
+            <span data-i18n="product.noodle.label">Smart Noodle Cooking Robot</span>
+          </a>
+          <a href="#insights">
+            <img src="assets/dropdown-stirfry.webp" alt="" />
+            <span data-i18n="product.stirfry.label">Intelligent Stir-Fry Robot</span>
+          </a>
+          <a href="#insights">
+            <img src="assets/dropdown-hdos-en.webp" alt="" />
+            <span data-i18n="product.hdos.label">Trustworthy Agent HDOS</span>
+          </a>
+          <a href="#insights">
+            <img src="assets/dropdown-factory-en.webp" alt="" />
+            <span data-i18n="product.factory.label">AI + Factory Smart Logistics Solution</span>
+          </a>
+          <a href="#insights">
+            <img src="assets/dropdown-hospital-en.webp" alt="" />
+            <span data-i18n="product.hospital.label">AI + Hospital Smart Logistics Solution</span>
+          </a>
+          <a href="#insights">
+            <img src="assets/dropdown-retail-en.webp" alt="" />
+            <span data-i18n="product.retail.label">AI + Retail Application Solutions</span>
+          </a>
+        </div>
+      </div>
+      <a href="#what-we-do" data-i18n="nav.what">What We Do</a>
+      <a href="#insights" data-i18n="nav.insights">Insights</a>
+      <a href="#about" data-i18n="nav.about">About Us</a>
+    </nav>
+    <div class="nav__mobile-footer">
+      <button class="nav__lang" type="button" aria-label="Switch language">
+        <span class="nav__lang-current">EN</span>
+        <span class="nav__lang-divider">/</span>
+        <span class="nav__lang-other">中</span>
+      </button>
+      <a class="nav__cta" href="mailto:BD@yunji.ai">
+        <span data-i18n="nav.connect">Connect</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </div>
   </div>
 </header>

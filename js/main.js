@@ -139,3 +139,51 @@ document.querySelectorAll('section').forEach(s => io.observe(s));
   window.addEventListener('resize', update);
   update();
 })();
+
+// Mobile hamburger menu
+(() => {
+  const nav = document.querySelector('.nav');
+  const toggle = document.querySelector('.nav__toggle');
+  const closeBtn = document.querySelector('.nav__mobile-close');
+  if (!toggle || !nav) return;
+
+  const open = () => {
+    nav.classList.add('is-mobile-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  };
+  const close = () => {
+    nav.classList.remove('is-mobile-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+
+  toggle.addEventListener('click', () => {
+    if (nav.classList.contains('is-mobile-open')) close();
+    else open();
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', close);
+
+  document.querySelectorAll('.nav__mobile a').forEach((link) => {
+    link.addEventListener('click', close);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav')) close();
+  });
+
+  // Mobile Products dropdown accordion
+  const mobileDropdownToggle = document.querySelector('.nav__mobile-dropdown-toggle');
+  const mobileDropdown = document.querySelector('.nav__mobile-dropdown');
+  if (mobileDropdownToggle && mobileDropdown) {
+    mobileDropdownToggle.addEventListener('click', () => {
+      mobileDropdown.classList.toggle('is-open');
+    });
+  }
+
+  // Close mobile menu when resizing to desktop
+  const mq = window.matchMedia('(min-width: 901px)');
+  const onMq = (e) => { if (e.matches) close(); };
+  mq.addEventListener('change', onMq);
+})();
