@@ -98,7 +98,11 @@ document.querySelectorAll('section').forEach(s => io.observe(s));
       items.forEach(x => x.classList.remove('is-active'));
       it.classList.add('is-active');
     });
-    it.addEventListener('click', (e) => e.preventDefault());
+    it.addEventListener('click', (e) => {
+      e.preventDefault();
+      items.forEach(x => x.classList.remove('is-active'));
+      it.classList.add('is-active');
+    });
   });
 })();
 

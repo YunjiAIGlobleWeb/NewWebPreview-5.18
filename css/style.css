@@ -1105,6 +1105,7 @@ em { font-style: italic; font-family: var(--ff-serif); font-weight: 500; }
 }
 
 @media (max-width: 900px) {
+  .gallery { padding: 24px 0 40px; }
   .gallery__track {
     flex-direction: column;
     height: auto;
@@ -1234,6 +1235,8 @@ em { font-style: italic; font-family: var(--ff-serif); font-weight: 500; }
   .stats__split { grid-template-columns: 1fr; gap: 32px; }
   .hero__inner { padding-bottom: 80px; padding-top: 120px; }
   .hero__scroll { display: none; }
+  .about { padding: 60px var(--pad-x) 40px; }
+  .about__title { margin-top: 28px; }
 }
 
 /* =========== BACK TO TOP =========== */
